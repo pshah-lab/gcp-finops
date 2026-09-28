@@ -1,8 +1,8 @@
 # Code walkthrough: how gcp-finops works, and why
 
 This document explains the Stage 1 code file by file, then goes through every significant design
-decision with its pros, cons and the trade-off we accepted. The last section lists known limitations
-and the questions an interviewer is likely to ask.
+decision with its pros, cons and the trade-off we accepted. The last sections list known limitations
+and answer common questions.
 
 Read the code alongside it, in this order: `schema.py` → `analysis.py` → `report.py` → `sample.py`
 → `cli.py` → `tests/`.
@@ -347,11 +347,11 @@ irrelevant at this data size.
    export.
 8. **Synthetic prices are approximate.** Don't quote them as real GCP prices.
 
-Each of these is a good answer to "what would you improve?"
+Each of these is on the list to improve; several are covered by the roadmap in the README.
 
 ---
 
-## 5. Questions to be ready for
+## 5. FAQ
 
 **"Why net cost instead of gross?"**
 Net is what the invoice charges. Gross overstates discounted services. I show gross in the summary
