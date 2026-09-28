@@ -6,6 +6,8 @@ missing.
 
 **[See an example report →](docs/example-report.md)** (generated from the bundled synthetic dataset)
 
+**[Code walkthrough →](docs/CODE-WALKTHROUGH.md)**: how each file works, and the pros, cons and trade-offs of every design decision.
+
 > Status: **Stage 1 of 3.** Works offline on a billing CSV. Next: a live BigQuery loader, waste
 > detection (idle VMs, unattached disks, unused IPs), rightsizing from Cloud Monitoring, and daily
 > anomaly detection. See the [roadmap](#roadmap).
